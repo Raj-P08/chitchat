@@ -10,12 +10,13 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Table(name="roles")
 @Entity
+@Table(name="roles")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class Role {
+
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,5 +24,8 @@ public class Role {
 	
 	@Column(unique = true, nullable = false, length = 20)
 	private String name;
+
+	
+	
 	
 }

@@ -17,7 +17,9 @@ import jakarta.persistence.PreUpdate;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Table(name="users")
 @Entity
@@ -62,4 +64,6 @@ public class User {
 	public void setUpdatedAt() {
 		this.updatedAt = LocalDateTime.now();
 	}
+
+	
 }
