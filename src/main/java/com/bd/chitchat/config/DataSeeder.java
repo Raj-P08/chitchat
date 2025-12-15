@@ -41,7 +41,7 @@ public class DataSeeder implements CommandLineRunner {
             
             User admin = new User();
             admin.setUsername("admin");
-            admin.setPassword(PasswordEncoder.encode("admin123")); // Will hash with BCrypt later
+            admin.setPassword(passwordEncoder.encode("admin123")); // Will hash with BCrypt later
             admin.setDisplayName("System Administrator");
             admin.setEmail("admin@chitchat.com");
             admin.setRoles(Set.of(adminRole));
